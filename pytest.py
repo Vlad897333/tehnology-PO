@@ -7,31 +7,21 @@ from Test_2 import (
 )
 
 def test_summation():
-    """Testing Summation function"""
-    assert palindrome("malayalam") == "malayalam"
-    assert palindrome("deed") == "deed"
-    assert palindrome("level") == "level"
+    assert palindrome("gala") == "gala"
+    assert palindrome("beb") == "beb"
+    assert palindrome("Qeve") == "Qeve"
 
-def test_subtraction():
-    """
-    Testing Subtraction function
-    """
-    assert back_string("ASD") == "DSA"
-    assert back_string("kill") == "llik"
-    assert back_string("nuul") == "luun"
+def test_subtraction():  
+    assert back_string("GFD") == "GFD"
+    assert back_string("dead") == "daed"
+    assert back_string("kit") == "tik"
 
-def test_multiplication():
-    """
-    Testing Multiplication function
-    """
-    assert vowels("ущшкр") == 4
-    assert vowels("ывщущшкпипша") == 3
-    assert vowels("ккккуфыщушпу") == 3
+def test_multiplication():  
+    assert vowels("ууукуер") == 4
+    assert vowels("рповпаоалыва") == 3
+    assert vowels("ееуеушукупщку") == 3
 
 def test_Division():
-    """
-    Testing Division function
-    """
     assert remove_duplicates("hello world") == "helo wrd"
     assert remove_duplicates("he knows English") == "he knowsEgli"
-    assert remove_duplicates("wooedd") == "woed"
+    assert remove_duplicates("chooois") == "chois"
