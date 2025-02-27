@@ -1,71 +1,66 @@
 import unittest
 import Test_2
-# вывести сроку в обратном порядке
 class py_test(unittest.TestCase):
     def test_string(self):
-       self.assertEqual(Test_2.back_string('Hello boy'),'yob olleH')
+       self.assertEqual(Test_2.back_string('Hello'),' olleH')
 
     def test_string(self):
-       self.assertEqual(Test_2.back_string('Cars'),'sraC')
+       self.assertEqual(Test_2.back_string('ars'),'sra')
 
     def test_string(self):
-       self.assertEqual(Test_2.back_string('Users'),'sresU')
+       self.assertEqual(Test_2.back_string('rs'),'sr')
 
     def test_string(self):
        self.assertEqual(Test_2.back_string('World'),'dlroW')
 
     def test_string(self):
        self.assertEqual(Test_2.back_string('Ket'),'teK')
-#-------------------------------------------------------------------------
-# Полиндром
-    def test_polindroms(self):
-        self.assertEqual(Test_2.polindrome('Anastasia'),('Anastasia'))
 
     def test_polindroms(self):
-        self.assertEqual(Test_2.polindrome('stars'),('srats'))
+        self.assertEqual(Test_2.polindrome('Masha'),('Masha'))
 
     def test_polindroms(self):
-        self.assertEqual(Test_2.polindrome('referall'),('referall'))
+        self.assertEqual(Test_2.polindrome('set'),('tes'))
+
+    def test_polindroms(self):
+        self.assertEqual(Test_2.polindrome('meell'),('mell'))
 
     def test_polindroms(self):
         self.assertEqual(Test_2.polindrome('med'),('med'))
 
     def test_polindroms(self):
-        self.assertEqual(Test_2.polindrome('level'),('level'))
-#---------------------------------------------------------------
-    # проверяет количество гласных
-    def test_vowels(self):
-       self.assertEqual(Test_2.vowels('Ехал'),1)
+        self.assertEqual(Test_2.polindrome('well'),('llew'))
 
     def test_vowels(self):
-        self.assertEqual(Test_2.vowels('Дом'), 3)
+       self.assertEqual(Test_2.vowels('Домик'),1)
 
     def test_vowels(self):
-       self.assertEqual(Test_2.vowels('Кошка'),3)
+        self.assertEqual(Test_2.vowels('Мусор'), 3)
 
     def test_vowels(self):
-       self.assertEqual(Test_2.vowels('Универ'),2)
+       self.assertEqual(Test_2.vowels('Кот'),3)
 
     def test_vowels(self):
-       self.assertEqual(Test_2.vowels('Собака'),2)
+       self.assertEqual(Test_2.vowels('Имя'),2)
 
-    #def test_symbols(self):
-     #   self.assertEqual(Test_2.symbol('Hello world'),('Helo wrd')
-#-------------------------------------------------------------------------
+    def test_vowels(self):
+       self.assertEqual(Test_2.vowels('Государь'),2)
+
+    
     def test_remove_duplicates(self):
-        self.assertEqual(Test_2.remove_duplicates("Hello world"), "Helo wrd")
+        self.assertEqual(Test_2.remove_duplicates("hell"), "hll")
 
     def test_remove_duplicates(self):
-        self.assertEqual(Test_2.remove_duplicates("he knows Inglish"), "he knows gli")
+        self.assertEqual(Test_2.remove_duplicates("nows"), "ns")
 
     def test_remove_duplicates(self):
         self.assertEqual(Test_2.remove_duplicates("qweqweqwe"), "qwe")
 
     def test_remove_duplicates(self):
-        self.assertEqual(Test_2.remove_duplicates("asdasdasd"), "asd")
+        self.assertEqual(Test_2.remove_duplicates("sasasa"), "sa")
 
     def test_remove_duplicates(self):
-        self.assertEqual(Test_2.remove_duplicates("zxczxczxc"), "zxc")
+        self.assertEqual(Test_2.remove_duplicates("rtrtrt"), "tr")
 
 
 if __name__ == 'main':
