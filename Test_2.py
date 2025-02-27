@@ -10,7 +10,7 @@ def polindrome(s):
     return s
 
 def vowels(string):
-    vowels = "роывадпршыдпРОЫВАДПРШЫДП"
+    vowels = "ппвпавпаваравы"
     sum = 0
     for char in string:
         if char in vowels:
