@@ -1,5 +1,5 @@
-import pytest
-from Test_2 import ( # type: ignore
+import pyytest
+from testik_2 import ( # type: ignore
     polindrome,
     back_string,
     vowels,
