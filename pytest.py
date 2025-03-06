@@ -1,5 +1,5 @@
 import pytest
-from Test_2 import (
+from Test_2 import ( # type: ignore
     polindrome,
     back_string,
     vowels,
@@ -7,9 +7,9 @@ from Test_2 import (
 )
 
 def test_summation():
-    assert palindrome("gala") == "gala"
-    assert palindrome("beb") == "beb"
-    assert palindrome("Qeve") == "Qeve"
+    assert polindrome("gala") == "gala"
+    assert polindrome("beb") == "beb"
+    assert polindrome("Qeve") == "Qeve"
 
 def test_subtraction():  
     assert back_string("GFD") == "GFD"

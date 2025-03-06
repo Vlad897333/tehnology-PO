@@ -1,4 +1,4 @@
-import Test_2
+import Test_2  # type: ignore
 
 def test_stroka():
     if Test_2.back_string("Hello") == "olleH":

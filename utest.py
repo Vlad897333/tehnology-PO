@@ -1,5 +1,5 @@
 import unittest
-import Test_2
+import Test_2 # type: ignore
 class py_test(unittest.TestCase):
     def test_string(self):
        self.assertEqual(Test_2.back_string('Hello'),' olleH')
